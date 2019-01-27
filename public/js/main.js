@@ -18,9 +18,10 @@ document.addEventListener("DOMContentLoaded", () => {
           data.rates[currency]
         } ${currency}`;
         document.querySelector("#result").innerHTML = contents;
+        document.querySelector('#currency').value = '';
       })
       .catch(() => {
-        document.querySelector("#result").innerHTML = `Enter correct details.`;
+        document.querySelector("#result").innerHTML = `Enter correct currency code.`;
       });
     return false;
   };
